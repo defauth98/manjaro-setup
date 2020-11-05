@@ -15,7 +15,7 @@
 sudo pacman -Syyuu
 
 # Instalar o YAY
-sudo pacman -S yay 
+sudo pacman -S yay base-devel
 
 # Install apps
 yay -S tilix ttf-jetbrains-mono visual-studio-code-bin github-cli tmux insomnia zsh git anki ulauncher beekeeper-studio-appimage brave inkscape gimp discord vlc
