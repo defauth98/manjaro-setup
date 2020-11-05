@@ -26,18 +26,6 @@ git clone https://github.com/defauth98/dotfiles.git dotfiles
 # Ir para o repositório
 cd dotfiles
 
-# Instale o Oh My Zshell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-# Instale o tema spaceship
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
-
-# Crie um link simbólico para o tema
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-
-# Copie os arquivos de configuração do Zshell
-cp files/zshrc $HOME/.zshrc
-
 # Instale o vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
@@ -46,6 +34,21 @@ cp files/vimrc $HOME/.vimrc
 
 # Copie o arquivo de configuração para a sua home
 cp files/gitconfig $HOME/.gitconfig
+
+# Copie os arquivos de configução
+cp files/tmux.conf $HOME/.tmux.conf
+
+# Copie os arquivos de configuração do Zshell
+cp files/zshrc $HOME/.zshrc
+
+# Instale o Oh My Zshell
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# Instale o tema spaceship
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+
+# Crie um link simbólico para o tema
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 # Crie uma nova chave ssh
 ssh-keygen -t rsa -b 4096 -C "neto.daniribeiro@gmail.com"
@@ -61,6 +64,3 @@ gh config set git_protocol ssh
 
 # Instale o tmux plugin manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
-# Copie os arquivos de configução
-cp files/tmux.conf $HOME/.tmux.conf
