@@ -1,11 +1,12 @@
 echo "Atualizando o sistema"
-sudo pacman -Syyuu
+sudo pacman -Syyuu --noconfirm
 
 echo "Instalando o YAY!"
-sudo pacman -S yay base-devel
+sudo pacman -S yay base-devel --noconfirm
 
 echo "Install this apps -> tilix visual-studio-code-bin github-cli tmux insomnia zsh git anki ulauncher beekeeper-studio-appimage brave inkscape gimp discord vlc vim"
-yay -S tilix ttf-jetbrains-mono visual-studio-code-bin github-cli tmux insomnia zsh git anki ulauncher beekeeper-studio-appimage brave inkscape gimp discord vlc vim
+yay -S tilix ttf-jetbrains-mono visual-studio-code-bin github-cli tmux insomnia zsh git anki ulauncher beekeeper-studio-appimage brave inkscape gimp discord vlc vim --noconfirm
+
 
 echo "Baixando meu repositório de arquivos de configuração"
 git clone https://github.com/defauth98/dotfiles.git dotfiles
