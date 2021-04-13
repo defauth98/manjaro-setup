@@ -29,6 +29,10 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 cp $HOME/dotfiles/files/tmux.conf $HOME/.tmux.conf
 
+# Configurando o alacrittry terminal
+
+cp $HOME/dotfiles/files/alacrittry $HOME/.config/alacritty/alacritty.yml
+
 #Configurando o zsh com Oh my zshell e o tema spaceship
 
 git clone https://github.com/defauth98/dotfiles.git dotfiles
