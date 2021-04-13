@@ -3,7 +3,7 @@ sudo pacman -Syyuu --noconfirm
 
 sudo pacman -S yay base-devel --noconfirm
 
-yay -S tilix ttf-jetbrains-mono visual-studio-code-bin github-cli tmux insomnia zsh git anki ulauncher beekeeper-studio-appimage brave inkscape gimp discord vlc vim --noconfirm
+yay -S tilix ttf-jetbrains-mono visual-studio-code-bin github-cli tmux insomnia zsh git anki ulauncher beekeeper-studio-appimage brave inkscape gimp discord vlc vim bat exa neovim percol bashtop --noconfirm
                                  
 #Configurando vim com o tema x
 
