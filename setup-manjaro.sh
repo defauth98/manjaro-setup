@@ -33,6 +33,9 @@ cp $HOME/dotfiles/files/tmux.conf $HOME/.tmux.conf
 
 cp $HOME/dotfiles/files/alacrittry $HOME/.config/alacritty/alacritty.yml
 
+# Configuração do neovim
+cp -r $HOME/dotfiles/files/neovim $HOME/.config/nvim
+
 #Configurando o zsh com Oh my zshell e o tema spaceship
 
 git clone https://github.com/defauth98/dotfiles.git dotfiles
